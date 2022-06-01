@@ -7,14 +7,15 @@ TagManager:
   - Mario
   - Ground
   - Enemy
+  - Obstacles
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Spawned
   - Water
   - UI
-  - 
+  - background
   - 
   - 
   - 
