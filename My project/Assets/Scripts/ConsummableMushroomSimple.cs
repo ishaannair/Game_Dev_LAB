@@ -50,6 +50,15 @@ public class ConsummableMushroomSimple : MonoBehaviour
                 Debug.Log("Collided with pipe!");
 
       }
+      if (other.gameObject.CompareTag("Ene")){
+                collision_with_obsticle=true;
+              
+                moveRight *= -1;
+                ComputeVelocity();
+
+                Debug.Log("Collided with pipe!");
+
+      }
         
             if (other.gameObject.CompareTag("Mario")){
                 collision_with_obsticle=true;
@@ -64,7 +73,7 @@ public class ConsummableMushroomSimple : MonoBehaviour
 
       
   }
-    void  OnBecameInvisible(){
-        Destroy(gameObject);	
-    }
+    // void  OnBecameInvisible(){
+    //     Destroy(gameObject);	
+    // }
 }
